@@ -14,7 +14,89 @@
 </head>
 
 <body>
+	<header>
+		<div class = "header">
+			<h1>BUDŻET OSOBISTY</h1>
+		</div>
+	</header>
 	
-	
+	<main>
+		<div class = "container">
+			<div class = "content">
+				<h2>Kilka słów o aplikacji</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed sagittis ligula. Aenean fermentum quam eu fringilla vehicula. Quisque ac arcu faucibus, scelerisque felis vel, sollicitudin tellus. Morbi nulla nibh, pretium non accumsan quis, rhoncus at nisl. Vestibulum nec iaculis orci. Sed tincidunt purus in turpis iaculis, eget porttitor mi viverra. Nulla elementum elit a placerat dictum. Aliquam vehicula tellus ac neque elementum, eu ornare erat auctor. Nulla fermentum dictum metus.</p>
+			</div>
+			
+			<div class = "registration">
+				
+				<div class = "buttons">
+					<button id = "setLogin">Logowanie</button>
+					<button id = "setRegister">Rejestracja</button>
+				</div>
+				
+				<form id = "registerForm">
+					<input type = "text" placeholder = "Imię"/>
+					<input type = "email" placeholder = "E-mail"/>
+					<input type = "password" placeholder = "Hasło"/>
+					<input type = "password" placeholder = "Powtórz hasło"/>
+					<input type = "submit" id = "register" value = "Zarejestruj"/>
+					<input type = "reset" id = "reset" value = "Wyczyść"/>
+				</form>
+			</div>
+			
+		</div>
+	</main>
+	<script>
+		
+		let isRegister = true;
+
+		let formRegister = '<input type = "text" placeholder = "Imię"/>' +
+					'<input type = "email" placeholder = "E-mail"/>' +
+					'<input type = "password" placeholder = "Hasło"/>' +
+					'<input type = "password" placeholder = "Powtórz hasło"/>' +
+					'<input type = "submit" id = "register" value = "Zarejestruj"/> ' +
+					'<input type = "reset" id = "reset" value = "Wyczyść"/>';
+					
+		let formLog = '<input type = "email" placeholder = "E-mail"/>' +
+					'<input type = "password" placeholder = "Hasło"/>' +
+					'<input type = "submit" id = "register" value = "Zaloguj"/> ' +
+					'<input type = "reset" id = "reset" value = "Wyczyść"/>';
+					
+		let form = document.getElementById("registerForm");
+		let login = document.getElementById("setLogin");
+		let register = document.getElementById("setRegister");
+		
+		login.style = "background-color: lightgray";
+		
+		function changeForm(newForm)
+		{
+			form.innerHTML = newForm;
+		}
+		
+			register.addEventListener("click", 
+			function()
+			{
+				if (isRegister == false)
+				{
+					changeForm(formRegister);
+					isRegister = true;
+					login.style = "background-color: lightgray";
+					register.style = "background-color: #28a745";
+				}
+			});
+		
+		
+			login.addEventListener("click", 
+			function()
+			{
+				if (isRegister == true)
+				{
+					changeForm(formLog);
+					isRegister = false;
+					register.style = "background-color: lightgray";
+					login.style = "background-color: #28a745";
+				}
+			});
+	</script>
 </body>
 </html>
