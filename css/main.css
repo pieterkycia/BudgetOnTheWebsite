@@ -201,11 +201,6 @@ input[type = password]:focus
 
 /******menu.html-----******/
 
-.menu
-{
-	margin-left: 30px;
-	float:left;
-}
 
 ol
 {
@@ -214,6 +209,7 @@ ol
 	margin: 0px;
 	margin-left: 30px;
 	padding: 0px;
+	text-align: center;
 }
 
 ol a
@@ -225,8 +221,8 @@ ol a
 
 ol > li
 {
-	padding: 10px;
 	display: inline-block;
+	padding: 10px;
 	border-right: 2px dotted #aaa;
 	font-size: 20px;
 }
