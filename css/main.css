@@ -194,7 +194,6 @@ input[type = date]
 	padding: 5px;
 	border-radius: 10px;
 	border: 2px solid #ddd;
-	margin-bottom: 10px;
 	outline: none;
 }
 
@@ -208,7 +207,6 @@ input[type = date]:focus
 }
 
 /******menu.html-----******/
-
 
 ol
 {
@@ -257,8 +255,9 @@ ol a:focus
 
 .menuContainer
 {
-	width: 800px;
+	width: 700px;
 	margin-top: 30px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -279,8 +278,9 @@ ol a:focus
 
 .incomesContainer
 {
-	width: 600px;
+	width: 700px;
 	margin-top: 30px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 20px;
@@ -289,7 +289,6 @@ ol a:focus
 	border-radius: 20px;
 	-webkit-box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9); 
 	box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9);
-	text-align: center;
 }
 
 #comment
@@ -297,13 +296,10 @@ ol a:focus
 	resize: none;
 }
 
-fieldset
+.incomesContainer fieldset
 {
-	text-align: left;
 	border: 2px solid #bbb;
-	width: 400px;
-	margin-bottom: 20px;
-	margin-left: 80px;
+	width: 600px;
 	border-radius: 15px;
 	line-height: 150%;
 }
@@ -319,5 +315,43 @@ textarea
 textarea:focus
 {
 	border: 2px solid #bbb;
+}
+
+/******expenses.html-----******/
+
+.expensesContainer
+{
+	width: 700px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	padding: 5px 20px;
+	background-color: #eee;
+	border-radius: 20px;
+	-webkit-box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9); 
+	box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9);
+}
+
+.expensesContainer fieldset
+{
+	border: 2px solid #bbb;
+	width: 600px;
+	border-radius: 15px;
+	line-height: 150%;
+}
+
+.row
+{
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.col
+{
+	float: left;
+	margin: 0 10px;
 }
 

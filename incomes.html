@@ -31,25 +31,39 @@
 		</header>
 		
 		<div class = "incomesContainer">
-			<h2>Dodawanie przychodu</h2>
+			<div class = "row">
+				<h2>Dodawanie przychodu</h2>
+			</div>
 			
-			<form id = "registerForm" action = "menu.html">
-				<div><label>Kwota: <input type = "number" step = "0.01"/></label></div>
-				<div><label>Data: <input type = "date" name = "date"/></label></div>
+			<form id = "incomeForm" action = "menu.html">
+				<div class = "row">
+					<div><label>Kwota: <input type = "number" step = "0.01"/></label></div>
+				</div>
 				
-				<fieldset>
-					<legend> Kategoria </legend>
-					<div><label><input type = "radio" name = "category"/> Wynagrodzenie</label></div>
-					<div><label><input type = "radio" name = "category"/> Odsetki bankowe</label></div>
-					<div><label><input type = "radio" name = "category"/> Sprzedaż na allegro</label></div>
-					<div><label><input type = "radio" name = "category"/> Inne</label></div>
-					
-					<div><label for = "comment">Komentarz (opcjonalnie):</label></div> 
-					<textarea name = "comment" id = "comment" rows = "5" cols = "50"></textarea>
-				</fieldset>
+				<div class = "row">
+					<div><label>Data: <input type = "date" name = "date"/></label></div>
+				</div>
 				
-				<input type = "submit" id = "register" value = "Dodaj"/>
-				<a href = "menu.html"><input type = "button" id = "reset" value = "Anuluj"/></a>
+				<div class = "row">
+					<fieldset>
+						<legend> Kategoria </legend>
+						<div class = "col">
+							<div><label><input type = "radio" name = "category"/> Wynagrodzenie</label></div>
+							<div><label><input type = "radio" name = "category"/> Odsetki bankowe</label></div>
+							<div><label><input type = "radio" name = "category"/> Sprzedaż na allegro</label></div>
+							<div><label><input type = "radio" name = "category"/> Inne</label></div>
+						</div>
+						<div style = "clear: both; margin-bottom: 10px;"></div>
+						
+						<div><label for = "comment">Komentarz (opcjonalnie):</label></div> 
+						<textarea name = "comment" id = "comment" rows = "5" cols = "50"></textarea>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+					<input type = "submit" id = "register" value = "Dodaj"/>
+					<a href = "menu.html"><input type = "button" id = "reset" value = "Anuluj"/></a>
+				</div>
 			</form>
 		</div>
 		
