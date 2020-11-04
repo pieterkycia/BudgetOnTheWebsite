@@ -48,6 +48,6 @@
 				loginHandle.classList.add("activeButton");
 				registerHandle.classList.remove("activeButton");
 				registerHandle.classList.add("deactiveButton");
-				formHandle.setAttribute("action", "#");
+				formHandle.setAttribute("action", "menu.html");
 			}
 		});
