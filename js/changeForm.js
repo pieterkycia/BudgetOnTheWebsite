@@ -2,17 +2,17 @@
 		
 	let isRegister = true;
 
-	let registerForm = '<input type = "text" placeholder = "Imię"/>' +
-					'<input type = "email" placeholder = "E-mail"/>' +
-					'<input type = "password" placeholder = "Hasło"/>' +
-					'<input type = "password" placeholder = "Powtórz hasło"/>' +
-					'<input type = "submit" id = "register" value = "Zarejestruj"/> ' +
-					'<input type = "reset" id = "reset" value = "Wyczyść"/>';
+	let registerForm = '<div class = "row"><input type = "text" placeholder = "Imię"/></div>' +
+					'<div class = "row"><input type = "email" placeholder = "E-mail"/></div>' +
+					'<div class = "row"><input type = "password" placeholder = "Hasło"/></div>' +
+					'<div class = "row"><input type = "password" placeholder = "Powtórz hasło"/></div>' +
+					'<div class = "row"><input type = "submit" id = "register" value = "Zarejestruj"/> ' +
+					'<input type = "reset" id = "reset" value = "Wyczyść"/></div>';
 					
-	let loginForm = '<input type = "email" placeholder = "E-mail"/>' +
-					'<input type = "password" placeholder = "Hasło"/>' +
-					'<input type = "submit" id = "register" value = "Zaloguj"/> ' +
-					'<input type = "reset" id = "reset" value = "Wyczyść"/>';
+	let loginForm = '<div class = "row"><input type = "email" placeholder = "E-mail"/></div>' +
+					'<div class = "row"><input type = "password" placeholder = "Hasło"/></div>' +
+					'<div class = "row"><input type = "submit" id = "register" value = "Zaloguj"/> ' +
+					'<input type = "reset" id = "reset" value = "Wyczyść"/></div>';
 					
 	let formHandle = document.getElementById("registerForm");
 	let loginHandle = document.getElementById("loginButton");
