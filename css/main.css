@@ -127,6 +127,7 @@ body
 
 input[type = submit],
 input[type = reset],
+input[type = button],
 button
 {
 	width: 110px;
@@ -160,19 +161,22 @@ input[type = submit]:focus
 	background-color: #179634;
 }
 
-input[type = reset]
+input[type = reset],
+input[type = button]
 {
 	background-color: #dc3545;
 }
 
-input[type = reset]:hover
+input[type = reset]:hover,
+input[type = button]:hover
 {
 	background-color: #cb2434;
 	border: 3px solid #cb2434;
 	cursor: pointer;
 }
 
-input[type = reset]:focus
+input[type = reset]:focus,
+input[type = button]:focus
 {
 	border: 3px solid #ba1323;
 	background-color: #cb2434;
@@ -180,7 +184,9 @@ input[type = reset]:focus
 
 input[type = text],
 input[type = email],
-input[type = password]
+input[type = password],
+input[type = number],
+input[type = date]
 {
 	min-width: 250px;
 	height: 30px;
@@ -194,9 +200,11 @@ input[type = password]
 
 input[type = text]:focus,
 input[type = email]:focus,
-input[type = password]:focus
+input[type = password]:focus,
+input[type = number]:focus,
+input[type = date]:focus
 {
-	border: 2px solid #ccc;
+	border: 2px solid #bbb;
 }
 
 /******menu.html-----******/
@@ -210,13 +218,6 @@ ol
 	margin-left: 30px;
 	padding: 0px;
 	text-align: center;
-}
-
-ol a
-{
-	text-decoration: none;
-	display: block;
-	color: black;
 }
 
 ol > li
@@ -235,6 +236,13 @@ ol > li:first-child
 ol > li:hover
 {
 	cursor: pointer;
+}
+
+ol a
+{
+	text-decoration: none;
+	display: block;
+	color: black;
 }
 
 ol > li:hover a
@@ -265,5 +273,51 @@ ol a:focus
 .chart
 {
 	text-align: center;
+}
+
+/******incomes.html-----******/
+
+.incomesContainer
+{
+	width: 600px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	padding: 5px 20px;
+	background-color: #eee;
+	border-radius: 20px;
+	-webkit-box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9); 
+	box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9);
+	text-align: center;
+}
+
+#comment
+{
+	resize: none;
+}
+
+fieldset
+{
+	text-align: left;
+	border: 2px solid #bbb;
+	width: 400px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+	border-radius: 15px;
+	line-height: 150%;
+}
+
+textarea
+{
+	border: 2px solid #ddd;
+	margin-top: 10px;
+	border-radius: 10px;
+	outline: none;
+}
+
+textarea:focus
+{
+	border: 2px solid #bbb;
 }
 

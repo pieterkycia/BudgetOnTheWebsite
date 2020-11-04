@@ -30,11 +30,27 @@
 			</div>
 		</header>
 		
-		<div class = "menuContainer">
-				<h2>Ogólny przegląd wydatków z wykresem</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed sagittis ligula. Aenean fermentum quam eu fringilla vehicula. Quisque ac arcu faucibus, scelerisque felis vel, sollicitudin tellus. Morbi nulla nibh, pretium non accumsan quis, rhoncus at nisl. Vestibulum nec iaculis orci. Sed tincidunt purus in turpis iaculis, eget porttitor mi viverra. Nulla elementum elit a placerat dictum. Aliquam vehicula tellus ac neque elementum, eu ornare erat auctor. Nulla fermentum dictum metus.</p>
+		<div class = "incomesContainer">
+			<h2>Dodawanie przychodu</h2>
+			
+			<form id = "registerForm" action = "menu.html">
+				<div><label>Kwota: <input type = "number" step = "0.01"/></label></div>
+				<div><label>Data: <input type = "date" name = "date"/></label></div>
 				
-				<div class = "chart"><img src = "img/wykres-kolowy.png"/><div>
+				<fieldset>
+					<legend> Kategoria </legend>
+					<div><label><input type = "radio" name = "category"/> Wynagrodzenie</label></div>
+					<div><label><input type = "radio" name = "category"/> Odsetki bankowe</label></div>
+					<div><label><input type = "radio" name = "category"/> Sprzedaż na allegro</label></div>
+					<div><label><input type = "radio" name = "category"/> Inne</label></div>
+					
+					<div><label for = "comment">Komentarz (opcjonalnie):</label></div> 
+					<textarea name = "comment" id = "comment" rows = "5" cols = "50"></textarea>
+				</fieldset>
+				
+				<input type = "submit" id = "register" value = "Dodaj"/>
+				<a href = "menu.html"><input type = "button" id = "reset" value = "Anuluj"/></a>
+			</form>
 		</div>
 		
 		
