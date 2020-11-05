@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>Budżet osobisty</title>
+		
+		<meta name="description" content="budżet osobisty, zarządzanie finansami" />
+		<meta name="keywords" content="budżet, finanse, wydatki, planowanie" />
+		
+		<link href = "css/main.css" rel = "stylesheet" type = "text/css"/>
+		<link href = "css/fontello.css" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+
+	<body>
+		<header>
+			<div class = "upBar">
+				<div class = "addres">
+					<a href = "menu.html"><i class = "icon-money-1" style = "color: green;"></i>Budżet.pl</a>
+				</div>
+				<ol>
+					<li><a href = "incomes.html">Dodaj przychód</a></li>
+					<li><a href = "expenses.html">Dodaj wydatek</a></li>
+					<li><a href = "balance.html">Przeglądaj bilans</a></li>
+					<li><a href = "settings.html" style = "color: #444; background-color: #dfdfdf;">Ustawienia</a></li>
+					<li><a href = "index.html">Wyloguj się</a></li>
+				</ol>
+				<div style = "clear: both;"></div>
+			</div>
+		</header>
+		
+		<div class = "container">
+			<div class = "mainContent">
+				<div class = "row">
+					<h2>Ustawienia</h2>
+				</div>
+				
+				<div class = "row">
+					<fieldset>
+						<legend> Edytuj imię </legend>
+						<div><label><input type = "text" placeholder = "Podaj nowe imię"/></label></div>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+					<fieldset>
+						<legend> Edytuj e-mail </legend>
+						<div><label><input type = "email" placeholder = "Podaj nowy e-mail"/></label></div>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+					<fieldset>
+						<legend> Edytuj hasło </legend>
+							<div><label><input type = "password" placeholder = "Podaj nowe hasło"/></label></div>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+					<fieldset>
+						<legend> Dodaj kategorię </legend>
+						
+						<div class = "col">
+							<div><label><input type = "radio" name = "addCategory"/> Przychodów</label></div>
+						</div>
+							
+						<div class = "col">
+							<div><label><input type = "radio" name = "addCategory"/> Wydatków</label></div>
+						</div>
+							
+						<div class = "col">
+							<div><label><input type = "radio" name = "addCategory"/> Płatności</label></div>
+						</div>
+						<div style = "clear: both; margin-bottom: 10px;"></div>
+							
+						<div><label><input type = "text" placeholder = "Podaj nazwę kategorii"/></label></div>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+					<fieldset>
+						<legend> Usuń kategorię </legend>
+						
+						<div class = "col">
+							<div><label><input type = "radio" name = "deleteCategory"/> Przychodów</label></div>
+						</div>
+							
+						<div class = "col">
+							<div><label><input type = "radio" name = "deleteCategory"/> Wydatków</label></div>
+						</div>
+							
+						<div class = "col">
+							<div><label><input type = "radio" name = "deleteCategory"/> Płatności</label></div>
+						</div>
+						<div style = "clear: both; margin-bottom: 10px;"></div>
+							
+						<div><label><input type = "text" placeholder = "Podaj nazwę kategorii"/></label></div>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+					<fieldset>
+						<legend> Edytuj kategorię </legend>
+						
+						<div class = "col">
+							<div><label><input type = "radio" name = "editCategory"/> Przychodów</label></div>
+						</div>
+							
+						<div class = "col">
+							<div><label><input type = "radio" name = "editCategory"/> Wydatków</label></div>
+						</div>
+							
+						<div class = "col">
+							<div><label><input type = "radio" name = "editCategory"/> Płatności</label></div>
+						</div>
+						<div style = "clear: both; margin-bottom: 10px;"></div>
+							
+						<div style = "margin-bottom: 10px;"><label><input type = "text" placeholder = "Podaj nazwę kategorii"/></label></div>
+						<div><label><input type = "text" placeholder = "Podaj nową nazwę"/></label></div>
+					</fieldset>
+				</div>
+				
+				<div class = "row">
+						<input type = "button" class = "saveButton" value = "Zapisz"/>
+						<a href = "menu.html"><input type = "button" class = "resetButton" value = "Anuluj"/></a>
+				</div>	
+			</div>
+		</div>
+		
+	</body>
+</html>

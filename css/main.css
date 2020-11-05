@@ -44,7 +44,6 @@ body
 
 .container
 {
-	background-color: black;
 	width: 1000px;
 	margin-top: 30px;
 	margin-left: auto;
@@ -141,7 +140,7 @@ input[type = reset],
 input[type = button]
 {
 	width: 110px;
-	height: 40px;
+	height: 43px;
 	margin-left: 10px;
 	margin-right: 5px;
 	font-size: 15px;
@@ -152,20 +151,23 @@ input[type = button]
 	outline: none;
 }
 
-input[type = submit]
+input[type = submit],
+.saveButton
 {
 	background-color: #28a745;
 	border: 3px solid #28a745;
 }
 
-input[type = submit]:hover
+input[type = submit]:hover,
+.saveButton:hover
 {
 	background-color: #179634;
 	border: 3px solid #179634;
 	cursor: pointer;
 }
 
-input[type = submit]:focus
+input[type = submit]:focus,
+.saveButton:focus
 {
 	border: 3px solid #068523;
 	background-color: #179634;
@@ -199,7 +201,7 @@ input[type = date]
 {
 	min-width: 250px;
 	height: 30px;
-	font-size: 15px;
+	font-size: 18px;
 	padding: 5px;
 	border-radius: 10px;
 	border: 2px solid #ddd;
@@ -286,6 +288,14 @@ ol > li:hover > a
 	width: 600px;
 	border-radius: 15px;
 	line-height: 150%;
+	-webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.9); 
+	box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.9);
+}
+
+.mainContent legend
+{
+	font-size: 22px;
+	font-weight: 700;
 }
 
 #comment
