@@ -306,5 +306,27 @@ textarea:focus
 	border: 2px solid #bbb;
 }
 
+/******balance.html-----******/
 
+.dropMenu
+{
+	margin-left: 250px;
+	margin-top: 33px;
+}
 
+.table
+{
+	margin: 12px;
+	float: left;
+	width: 400px;
+	border: 2px solid #bbb;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.table h4
+{
+	font-size: 24px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
