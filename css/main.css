@@ -9,14 +9,14 @@ body
 {
 	background-color: #eee;
 	width: 100%;
+	min-width: 1000px;
 	-webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.9); 
 	box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.9);
 }
 
 .addres
 {
-	display: inline-block;
-	padding: 10px;
+	float: left;
 	padding-left: calc((100% - 1000px) / 2);
 	margin-left: 20px;
 	margin-top: 0;
@@ -26,6 +26,8 @@ body
 
 .addres a
 {
+	display: block;
+	padding: 11px;
 	text-decoration: none;
 	color: black;
 }
@@ -42,6 +44,7 @@ body
 
 .container
 {
+	background-color: black;
 	width: 1000px;
 	margin-top: 30px;
 	margin-left: auto;
@@ -51,9 +54,10 @@ body
 
 .content
 {
-	width: 530px;
+	width: 500px;
 	float: left;
-	margin: 20px;
+	margin: 0px 20px;
+	margin-left: 40px;
 	padding: 20px;
 	background-color: #eee;
 	border-radius: 20px;
@@ -75,13 +79,11 @@ body
 
 .registration
 {
-	text-align: center;
-	margin-top: 20px;
-	margin: 20px;
-	width: 300px;
+	margin: 0px 20px;
+	width: 320px;
 	min-width: 294px;
 	float: left;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 20px;
 	font-size: 25px;
 	background-color: #eee;
@@ -89,10 +91,19 @@ body
 	box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9);
 }
 
-.buttons
+.row
 {
+	margin-left: 30px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+.col
+{
+	float: left;
+	margin: 0 10px;
+}
+
 .activeButton
 {
 	background-color: #007bff;
@@ -127,11 +138,11 @@ body
 
 input[type = submit],
 input[type = reset],
-button
+input[type = button]
 {
 	width: 110px;
 	height: 40px;
-	margin-left: 5px;
+	margin-left: 10px;
 	margin-right: 5px;
 	font-size: 15px;
 	color: #fff;
@@ -160,19 +171,21 @@ input[type = submit]:focus
 	background-color: #179634;
 }
 
-input[type = reset]
+input[type = reset], 
+.resetButton
 {
 	background-color: #dc3545;
 }
 
-input[type = reset]:hover
+input[type = reset]:hover,
+.resetButton:hover
 {
 	background-color: #cb2434;
 	border: 3px solid #cb2434;
 	cursor: pointer;
 }
-
-input[type = reset]:focus
+input[type = reset]:focus,
+.resetButton:focus
 {
 	border: 3px solid #ba1323;
 	background-color: #cb2434;
@@ -180,7 +193,9 @@ input[type = reset]:focus
 
 input[type = text],
 input[type = email],
-input[type = password]
+input[type = password],
+input[type = number],
+input[type = date]
 {
 	min-width: 250px;
 	height: 30px;
@@ -188,23 +203,23 @@ input[type = password]
 	padding: 5px;
 	border-radius: 10px;
 	border: 2px solid #ddd;
-	margin-bottom: 10px;
 	outline: none;
 }
 
 input[type = text]:focus,
 input[type = email]:focus,
-input[type = password]:focus
+input[type = password]:focus,
+input[type = number]:focus,
+input[type = date]:focus
 {
-	border: 2px solid #ccc;
+	border: 2px solid #bbb;
 }
 
 /******menu.html-----******/
 
-
 ol
 {
-	display: inline-block;
+	float: left;
 	list-style-type: none;
 	margin: 0px;
 	margin-left: 30px;
@@ -216,13 +231,13 @@ ol a
 {
 	text-decoration: none;
 	display: block;
+	padding: 14px;
 	color: black;
 }
 
 ol > li
 {
-	display: inline-block;
-	padding: 10px;
+	float: left;
 	border-right: 2px dotted #aaa;
 	font-size: 20px;
 }
@@ -234,27 +249,30 @@ ol > li:first-child
 
 ol > li:hover
 {
+	background-color: #dfdfdf;
 	cursor: pointer;
 }
 
-ol > li:hover a
+ol > li:hover > a
 {
-	color: #666;
+	color: #444;
 }
 
-ol a:focus
+.chart
 {
-	color: #666;
+	text-align: center;
 }
 
-.menuContainer
+/******incomes.html and expenses.html-----******/
+
+.mainContent
 {
-	width: 800px;
+	width: 700px;
 	margin-top: 30px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: justify;
-	font-size: 25px;
+	font-size: 20px;
 	padding: 5px 20px;
 	background-color: #eee;
 	border-radius: 20px;
@@ -262,8 +280,31 @@ ol a:focus
 	box-shadow: 4px 4px 20px 2px rgba(0,0,0,0.9);
 }
 
-.chart
+.mainContent fieldset
 {
-	text-align: center;
+	border: 2px solid #bbb;
+	width: 600px;
+	border-radius: 15px;
+	line-height: 150%;
 }
+
+#comment
+{
+	resize: none;
+}
+
+textarea
+{
+	border: 2px solid #ddd;
+	margin-top: 10px;
+	border-radius: 10px;
+	outline: none;
+}
+
+textarea:focus
+{
+	border: 2px solid #bbb;
+}
+
+
 

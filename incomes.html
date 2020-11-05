@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>Budżet osobisty</title>
+		
+		<meta name="description" content="budżet osobisty, zarządzanie finansami" />
+		<meta name="keywords" content="budżet, finanse, wydatki, planowanie" />
+		
+		<link href = "css/main.css" rel = "stylesheet" type = "text/css"/>
+		<link href = "css/fontello.css" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+
+	<body>
+		<header>
+			<div class = "upBar">
+				<div class = "addres">
+					<a href = "menu.html"><i class = "icon-money-1" style = "color: green;"></i>Budżet.pl</a>
+				</div>
+				<ol>
+					<li ><a href = "incomes.html" style = "color: #444; background-color: #dfdfdf;">Dodaj przychód</a></li>
+					<li><a href = "expenses.html">Dodaj wydatek</a></li>
+					<li><a href = "balance.html">Przeglądaj bilans</a></li>
+					<li><a href = "settings.html">Ustawienia</a></li>
+					<li><a href = "index.html">Wyloguj się</a></li>
+				</ol>
+				<div style = "clear: both;"></div>
+			</div>
+		</header>
+		
+		<div class = "container">
+			<div class = "mainContent">
+				<div class = "row">
+					<h2>Dodawanie przychodu</h2>
+				</div>
+				
+				<form id = "incomeForm" action = "menu.html">
+					<div class = "row">
+						<div><label>Kwota: <input type = "number" step = "0.01"/></label></div>
+					</div>
+					
+					<div class = "row">
+						<div><label>Data: <input type = "date" name = "date"/></label></div>
+					</div>
+					
+					<div class = "row">
+						<fieldset>
+							<legend> Kategoria </legend>
+							<div class = "col">
+								<div><label><input type = "radio" name = "category"/> Wynagrodzenie</label></div>
+								<div><label><input type = "radio" name = "category"/> Odsetki bankowe</label></div>
+								<div><label><input type = "radio" name = "category"/> Sprzedaż na allegro</label></div>
+								<div><label><input type = "radio" name = "category"/> Inne</label></div>
+							</div>
+							<div style = "clear: both; margin-bottom: 10px;"></div>
+							
+							<div><label for = "comment">Komentarz (opcjonalnie):</label></div> 
+							<textarea name = "comment" id = "comment" rows = "5" cols = "50"></textarea>
+						</fieldset>
+					</div>
+					
+					<div class = "row">
+						<input type = "submit" id = "addButton" value = "Dodaj"/>
+						<a href = "menu.html"><input type = "button" id = "cancelButton" class = "resetButton" value = "Anuluj"/></a>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>

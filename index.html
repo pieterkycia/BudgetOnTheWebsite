@@ -20,6 +20,7 @@
 				<div class = "addres">
 					<a href = "index.html"><i class = "icon-money-1" style = "color: green;"></i>Budżet.pl</a>
 				</div>
+				<div style = "clear: both;"></div>
 			</div>
 		</header>
 		
@@ -31,24 +32,38 @@
 				
 			<div class = "registration">
 					
-				<div class = "buttons">
-					<button id = "registerButton" class = "activeButton">Rejestracja</button>
-					<button id = "loginButton" class = "deactiveButton">Logowanie</button>
+				<div class = "row">
+					<input type = "button" id = "registerButton" class = "activeButton" value = "Rejestracja"/>
+					<input type = "button" id = "loginButton" class = "deactiveButton" value = "Logowanie"/>
 				</div>
 					
 				<form id = "registerForm" action = "">
-					<input type = "text" placeholder = "Imię"/>
-					<input type = "email" placeholder = "E-mail"/>
-					<input type = "password" placeholder = "Hasło"/>
-					<input type = "password" placeholder = "Powtórz hasło"/>
-					<div></div>
-					<input type = "submit" id = "register" value = "Zarejestruj"/>
-					<input type = "reset" id = "reset" value = "Wyczyść"/>
+				
+					<div class = "row">
+						<input type = "text" placeholder = "Imię"/>
+					</div>
+					
+					<div class = "row">
+						<input type = "email" placeholder = "E-mail"/>
+					</div>
+					
+					<div class = "row">
+						<input type = "password" placeholder = "Hasło"/>
+					</div>
+					
+					<div class = "row">
+						<input type = "password" placeholder = "Powtórz hasło"/>
+					</div>
+					
+					<div class = "row">
+						<input type = "submit" id = "register" value = "Zarejestruj"/>
+						<input type = "reset" id = "reset" value = "Wyczyść"/>
+					</div>
 				</form>
 			</div>
 			<div style = "clear: both;"></div>
 		</div>
-		
+			
 		<script src = "js/changeForm.js" type = "text/javascript"></script>
 		
 	</body>
