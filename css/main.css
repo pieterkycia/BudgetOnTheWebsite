@@ -94,13 +94,14 @@ body
 {
 	margin-left: 30px;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .col
 {
 	float: left;
-	margin: 0 10px;
+	margin: 0px 10px;
+	margin-bottom: 15px;
 }
 
 .activeButton
@@ -288,13 +289,13 @@ ol > li:hover > a
 	width: 600px;
 	border-radius: 15px;
 	line-height: 150%;
-	-webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.9); 
-	box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.9);
+	-webkit-box-shadow: 4px 4px 7px -1px rgba(0,0,0,0.9); 
+	box-shadow: 4px 4px 7px -1px rgba(0,0,0,0.9);
 }
 
 .mainContent legend
 {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -351,6 +352,8 @@ textarea:focus
 	border: 2px solid #bbb;
 	border-radius: 15px;
 	padding: 10px;
+	-webkit-box-shadow: 4px 4px 7px -1px rgba(0,0,0,0.9); 
+	box-shadow: 4px 4px 7px -1px rgba(0,0,0,0.9);
 }
 
 .table h4
